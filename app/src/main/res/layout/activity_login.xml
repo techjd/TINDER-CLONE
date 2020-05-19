@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".LoginActivity"
+
+    android:orientation="vertical">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <EditText
+
+            android:layout_marginTop="25sp"
+            android:layout_gravity="center"
+            android:background="@drawable/border2"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:hint="Email"
+            android:id="@+id/email"/>
+
+
+        <EditText
+            android:layout_gravity="center"
+            android:inputType="textPassword"
+            android:layout_marginTop="25sp"
+            android:background="@drawable/border2"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:hint="password"
+            android:id="@+id/password"/>
+        <Button
+            android:layout_marginTop="30sp"
+            android:layout_gravity="center"
+            android:background="@drawable/border1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:text="Login"
+            android:textSize="40dp"
+            android:id="@+id/login"/>
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:visibility="invisible"
+            android:id="@+id/animation_view"
+            android:layout_gravity="center"
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+            app:lottie_fileName="heart.json"
+            app:lottie_loop="true"
+            app:lottie_autoPlay="true" />
+
+    </LinearLayout>
+
+</LinearLayout>
